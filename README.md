@@ -9,9 +9,13 @@ Luukka,P., Collan, M., Bonferroni mean based similarity based TOPSIS,
 https://ieeexplore.ieee.org/abstract/document/7737756
 
 Scritp Mainfile.m has and example on how to use the coded.
+
 function topsissimBM.m is main function call for the method.
+
 function simLPBon.m computes Bonferroni mean based similarity between alternatives.
+
 function Bonmean.m computes Bonferroni mean.
+
 function normalization2.m normalizes data into unit interval.
 
 Feel free to use it freely for academic purposes.
