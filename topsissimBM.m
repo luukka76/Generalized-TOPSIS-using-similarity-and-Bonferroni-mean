@@ -3,8 +3,8 @@ x=data;
 [m,n]=size(x);
 a=zeros(m,n);
 %Normalization:
-a=normalization2(x);
-
+%a=normalization2(x);
+a=normalize(x,'range'); %matlab's own normalization function
 %Positive and negative ideal solutions:
 PIS=zeros(1,n);
 NIS=zeros(1,n);
