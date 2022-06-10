@@ -18,7 +18,10 @@ p=2; m=3; q=3;
 %vector 1=benefit, 2=cost.
 crit=[1 1 1 2 1]; %in this example fourth would be cost criteria and others benefit
 
-[cc,PISB,NISB]=topsissimBM(data,p,m,q,crit)
+%Weights for the criteria, now just set to one (no weighting)
+we=[1,1,1,1,1];
+
+[cc,PISB,NISB]=topsissimBM(data,p,m,q,crit,we)
 
 %For output of the function you get:
 %cc = closeness coefficient values for ten alternatives
