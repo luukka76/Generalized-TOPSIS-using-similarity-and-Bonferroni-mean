@@ -1,10 +1,13 @@
-function [cc,PISB,NISB]=topsissimBM(data,p,m1,q,crit)
+function [cc,PISB,NISB]=topsissimBM(data,p,m1,q,crit,we)
 x=data;
 [m,n]=size(x);
 a=zeros(m,n);
 %Normalization:
 %a=normalization2(x);
-a=normalize(x,'range'); %matlab's own normalization function
+nr=normalize(x,'range'); %matlab's own normalization function
+%weighted normalized decision matrix:
+a=we.*nr;
+
 %Positive and negative ideal solutions:
 PIS=zeros(1,n);
 NIS=zeros(1,n);
